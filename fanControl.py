@@ -47,7 +47,7 @@ def log_file(cpu_fan,temp,status):
     # write logfile
     now_string = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     log = "Time: {}, temp: {}, cpu_fan: {}, status: {} \n".format(now_string, temp,cpu_fan,status)
-    #print(log)
+    print(log)
     with open("fan_control.log", 'a') as f:
         f.write(log)
 def truncate_logfile(max_lines):
