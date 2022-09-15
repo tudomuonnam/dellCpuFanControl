@@ -27,3 +27,6 @@ Save and check it again at crontab -l
 Simple
 
 I took it here if next time intall new OS. :) 
+
+# Update
+15/09/2022: Write newControl.py that allow program run every 15 seconds and start program at restart. 1 minutes is too long heat can rise quick and freeze CPU
