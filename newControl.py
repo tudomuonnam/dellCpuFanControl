@@ -8,7 +8,7 @@ from datetime import datetime
 
 MAX_LINES = 5000
 
-TEMP_MAX_SPEED = 60
+TEMP_MAX_SPEED = 50
 TEMP_MIN_SPEED = 45
 
 def get_status():
