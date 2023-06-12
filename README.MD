@@ -9,6 +9,23 @@ Problem solve with 3 utility:
 - Install i8kutil to control speed fan (keep i8kutil run as service)
 - Install dell-bios-fan-control (git clone, copy to usr/bin and run under root every reboot computer)
 
+```
+git clone https://github.com/TomFreudenberg/dell-bios-fan-control.git
+
+cd dell-bios-fan-control
+
+make dell-bios-fan-control
+
+chmod + x dell-bios-fan-control
+
+cp dell-bios-fan-control /usr/bin/
+
+```
+add to crontab: 
+
+`@reboot dell-bios-fan-control 0
+`
+
 In Dell latitude have 3 state of speed:
 - state 0: fan not spin
 - State 1: fan run normal ( around 400 rpm )
